@@ -1,0 +1,16 @@
+# Maven/Gradle build folders
+/target/
+/build/
+
+# IDE specific
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

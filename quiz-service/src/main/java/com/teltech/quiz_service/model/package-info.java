@@ -1,0 +1,1 @@
+package com.teltech.quiz_service.model;
