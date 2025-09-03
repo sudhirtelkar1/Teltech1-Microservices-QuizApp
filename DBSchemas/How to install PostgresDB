@@ -1,0 +1,58 @@
+Step 1: Download PostgreSQL  
+Go to the PostgreSQL official website.  
+Click on Windows to navigate to the Windows-specific installation page.  
+Download the PostgreSQL installer by clicking on the link for the EDB installer.  
+
+Step 2: Install PostgreSQL  
+Run the Installer:  
+Open the downloaded installer and click Next to start the installation.  
+Choose Installation Directory:  
+Select the directory where you want to install PostgreSQL or accept the default location. Click Next.  
+Select Components:  
+Ensure that the following components are selected:  
+PostgreSQL Server  
+pgAdmin 4  
+Command Line Tools  
+Click Next.  
+Choose Data Directory:  
+Choose a location for the PostgreSQL data directory or accept the default. Click Next.  
+Set Password for PostgreSQL Superuser (postgres): pass 
+Enter a strong password for the default postgres user. Remember this password as it will be used to log in to PostgreSQL. Click Next.  
+Select Port:  
+The default port is 5432. Leave it unchanged unless there is a conflict. Click Next.  
+Set Locale:  
+Choose the appropriate locale for your region or accept the default. Click Next.  
+Install:  
+Review your settings and click Next to begin the installation. The process might take a few minutes.  
+Complete Installation:  
+Once the installation is complete, click Finish.  
+
+Step 3: Verify PostgreSQL Installation  
+Open the SQL Shell (psql) from the Start menu.  
+Enter the following details:  
+Server: localhost  
+Database: postgres  
+Port: 5432  
+Username: postgres  
+Password: (the password you set during installation)  
+Type \l to list databases and verify the installation.  
+
+Step 4: Launch and Configure pgAdmin  
+Open pgAdmin from the Start menu.  
+When pgAdmin opens in your browser, log in with the default email (admin@admin.com) and password (set during installation).  
+Add a new server:  
+Click on the "Add New Server" button or navigate to File → Add Server.  
+Enter a name for the server (e.g., "Localhost PostgreSQL").  
+Under the Connection tab:  
+Hostname: localhost  
+Port: 5432  
+Username: postgres  
+Password: (the password set during installation)  pass   
+Click Save.  
+
+Step 5: Test pgAdmin  
+Expand the server you just added in the pgAdmin interface.  
+Explore databases, create tables, and execute SQL queries to verify everything works correctly.  
+
+Step 5: Generate the questionDb and QuizDb databases and also populate data 
+In pgAdmin open queryTool and run the scripts mentioned in DbSchema folder. 
